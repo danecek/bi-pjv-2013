@@ -8,12 +8,22 @@ package funkce;
  *
  * @author danecek
  */
-public class Funkce {
+public abstract class Funkce {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    protected double amplituda;
+
+    public Funkce(double amplituda) {
+        this.amplituda = amplituda;
+    }
+
+    abstract double funkcniHodnota(double argument);
+
+    public double getAmplituda() {
+        return amplituda;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + ": amplituda=" + amplituda;
     }
 }
