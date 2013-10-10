@@ -10,7 +10,7 @@ package funkce;
  */
 public abstract class Funkce {
 
-    protected double amplituda;
+    private double amplituda;
 
     public Funkce(double amplituda) {
         this.amplituda = amplituda;

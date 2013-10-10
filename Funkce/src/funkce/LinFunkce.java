@@ -20,7 +20,7 @@ public class LinFunkce extends Funkce {
 
     @Override
     double funkcniHodnota(double argument) {
-        return amplituda * (argument + b);
+        return getAmplituda() * (argument + b);
     }
 
     @Override

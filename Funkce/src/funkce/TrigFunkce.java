@@ -23,6 +23,6 @@ public class TrigFunkce extends Funkce {
 
     @Override
     double funkcniHodnota(double argument) {
-        return amplituda * (Math.sin(argument * frekvence - faze));
+        return getAmplituda() * (Math.sin(argument * frekvence - faze));
     }
 }
