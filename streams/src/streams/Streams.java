@@ -18,7 +18,7 @@ import java.io.PrintWriter;
  *
  * @author danecek
  */
-public class Stream {
+public class Streams {
 
     /**
      * @param args the command line arguments

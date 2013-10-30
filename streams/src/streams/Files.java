@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package files;
+package streams;
 
 import java.io.File;
 
@@ -22,15 +22,15 @@ public class Files {
     }
     
     static void dmp(String dir) {
-        admp(new File(dir));
+        admp(new File(dir), 1);
     }
     
-    static void admp(File file) {
-        System.out.println(file);
+    static void admp(File file, int indent) {
+        System.out.printf("%" + indent + "c%s\n",  ' ' , file);
         if (file.isFile()) return;
         File[] fs = file.listFiles();
         for (File f : fs) {
-           admp(f); 
+           admp(f, indent + 3); 
         }
     }
 }
