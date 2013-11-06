@@ -22,6 +22,7 @@ public class Streams {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        
         FileOutputStream fos =
                 new FileOutputStream("/home/classroom/user/danecek/NetBeansProjects/pjv/2013/stream/src/stream/StreamCopy.jv");
         FileInputStream fis =

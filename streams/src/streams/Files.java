@@ -16,21 +16,23 @@ public class Files {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       dmp(".");
-        
+        dmp(".");
+
         // TODO code application logic here
     }
-    
+
     static void dmp(String dir) {
         admp(new File(dir), 1);
     }
-    
+
     static void admp(File file, int indent) {
-        System.out.printf("%" + indent + "c%s\n",  ' ' , file);
-        if (file.isFile()) return;
+        System.out.printf("%" + indent + "c%s\n", ' ', file);
+        if (file.isFile()) {
+            return;
+        }
         File[] fs = file.listFiles();
         for (File f : fs) {
-           admp(f, indent + 3); 
+            admp(f, indent + 3);
         }
     }
 }
