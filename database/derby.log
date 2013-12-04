@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Dec 04 16:01:05 CET 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0142-be20-6d2d-000002fd94f0 
+on database directory /home/classroom/user/danecek/poznamkyDB with class loader sun.misc.Launcher$AppClassLoader@74e0eb3f 
+Loaded from file:/home/classroom/user/danecek/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_45-b18
+user.dir=/home/classroom/user/danecek/NetBeansProjects/pjv-2013/database
+os.name=Linux
+os.arch=amd64
+os.version=3.10.7-gentoo-UCEBNY-B131-05-fw
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
