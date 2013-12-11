@@ -30,11 +30,9 @@ public class PoznamkaDAO {
     public static PoznamkaDAO getInstance() {
         return instance;
     }
-
     private Connection conn;
     PreparedStatement psCreate;
     PreparedStatement psGetAll;
-    
     private static PoznamkaDAO instance = new PoznamkaDAO();
 
     private PoznamkaDAO() {
@@ -63,7 +61,7 @@ public class PoznamkaDAO {
         psCreate.execute();
     }
 
-   public Collection<Poznamka> getALL() throws SQLException {
+    public Collection<Poznamka> getALL() throws SQLException {
         ResultSet rs = psGetAll.executeQuery();
         Collection<Poznamka> poznamky = new ArrayList<>();
         while (rs.next()) {

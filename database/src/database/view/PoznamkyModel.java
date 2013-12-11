@@ -25,6 +25,19 @@ class PoznamkyModel extends AbstractTableModel {
     }
 
     @Override
+    public String getColumnName(int col) {
+        switch (col) {
+            case 0: return "Id";
+            case 1: return "Date";
+            case 2: return "Text";
+                
+        }
+        return null;
+    }
+    
+    
+
+    @Override
     public int getRowCount() {
         return poznamky.size();
     }

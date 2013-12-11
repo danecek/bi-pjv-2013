@@ -14,6 +14,7 @@ public class MainFrame extends JFrame {
     
     public MainFrame() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setJMenuBar(new NoteMenuBar());
         add(new MainPanel());
         pack();
         setVisible(true);
